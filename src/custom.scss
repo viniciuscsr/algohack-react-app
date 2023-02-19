@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 1.8 rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4 rem;
+  padding: 0.5 rem 0;
+}
+
+h3 {
+  padding: 0.3rem 0;
+}
+
+$body-bg: #eef0f2;
+$body-color: #433a3f;
+
+$primary: #2596be;
+$secondary: #80cdce;
+$success: #40a873;
+$info: #2c2f46;
+$warning: #bd983b;
+$danger: #f44336;
+$light: #eef0f2;
+$dark: #433a3f;
+
+$white: white;
+
+/* color scheme */
+/* primary color */
+/* --onyx: #2596be; */
+/* secondary colors */
+/* --green-ryb: #76b84b;
+--cultured: #eef0f2;
+--black-coffee: #433a3f; */
+
+// import bootstrap styles at the bottom
+@import '~bootstrap/scss/bootstrap.scss';

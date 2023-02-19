@@ -1,0 +1,63 @@
+@import '../../custom.scss';
+
+.results__summary {
+  min-height: 120px;
+  background-color: $white;
+  border-radius: 10px;
+}
+.results__dashboard-card {
+  background-color: $white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.results__dashboard-card > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.results__percentage {
+  font-size: 2rem;
+}
+
+.results__loading-overlay {
+  height: 100%;
+}
+
+.results__category-title {
+  padding-right: 20px;
+  p::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.results__details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results__container {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.results__modal {
+  z-index: 10;
+}
+
+@media (max-width: 575px) {
+  .results__container {
+    padding-top: 170px;
+  }
+}
+
+.results__value__good {
+  color: $success;
+}
+.results__value__average {
+  color: $body-color;
+}
+.results__value__poor {
+  color: $danger;
+}

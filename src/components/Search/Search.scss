@@ -1,0 +1,65 @@
+@import '../../custom.scss';
+
+.search__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  background-image: linear-gradient(to right, #2596be, #76b84b);
+  z-index: 2;
+  padding: 0 5%;
+  color: $white;
+}
+
+.results__summary-list {
+  display: inline;
+  margin-left: 5px;
+}
+
+.search__input {
+  height: 40px;
+  width: 400px;
+  border: 0px;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .search__input {
+    width: 300px;
+  }
+}
+
+.search__input__invalid {
+  border: 2px solid $danger;
+}
+
+.search__button {
+  height: 40px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: $white;
+}
+
+.search__invalid-input {
+  color: $danger;
+  font-weight: 600;
+  font-size: large;
+}
+
+.search__logo {
+  width: 50%;
+  margin: 40px;
+}
+
+.search__icon {
+  border: none !important;
+}
+.search__bar {
+  display: inline-flex;
+  align-items: center;
+  background-color: $white;
+  border-radius: 20px;
+  padding: 0 20px;
+}

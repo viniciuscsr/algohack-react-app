@@ -1,0 +1,51 @@
+@import '../../custom.scss';
+
+.post {
+  position: relative;
+  min-height: calc(100vh - 45px);
+
+  &__col {
+    max-width: 800px;
+    background-color: $white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__body {
+    p {
+      font-size: 1.1rem;
+      line-height: 28px;
+    }
+  }
+
+  &__author__headshot {
+    height: 50px;
+    width: auto;
+    border-radius: 30px;
+  }
+
+  &__author__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 2%;
+    margin: 20px 0;
+    border-top: #a9a9a9 solid 2px;
+    border-bottom: #a9a9a9 solid 2px;
+  }
+
+  &__author__name {
+    display: inline;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}
