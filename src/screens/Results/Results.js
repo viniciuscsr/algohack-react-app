@@ -12,12 +12,16 @@ function Results() {
   const [error, setError] = useState(false);
 
   const location = useLocation();
+  const apiBaseUrl = process.env.REACT_APP_API_URI;
 
   useEffect(() => {
     async function fetchData() {
       try {
         setIsLoading(true);
-        const { data } = await axios.post('/api/results', location.state);
+        const { data } = await axios.post(
+          `${apiBaseUrl}/api/results`,
+          location.state
+        );
         if (data.message) {
           throw new Error(data.message);
         } else {
